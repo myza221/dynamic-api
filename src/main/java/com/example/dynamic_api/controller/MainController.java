@@ -15,7 +15,7 @@ public class MainController {
     @Autowired
     private MainServiceInf mainService;
 
-    @PostMapping()
+    @PostMapping("/")
     public Object saveProcess(@RequestBody String body) throws Exception{
         return mainService.processApi(body);
     }
